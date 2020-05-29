@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1806E2A9247FD18D002DC535 /* YSDymicLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B4742247F8DCD00088B16 /* YSDymicLibrary.framework */; };
+		180395C52480F047003FFE57 /* YSDymicLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180395C42480F047003FFE57 /* YSDymicLibrary.framework */; };
 		1806E2AA247FD18D002DC535 /* libYSStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B4744247F8DD200088B16 /* libYSStaticLibrary.a */; };
 		185B4704247F880600088B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B4703247F880600088B16 /* AppDelegate.swift */; };
 		185B4706247F880600088B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B4705247F880600088B16 /* SceneDelegate.swift */; };
@@ -17,7 +17,7 @@
 		185B4710247F880800088B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185B470E247F880800088B16 /* LaunchScreen.storyboard */; };
 		185B471B247F880800088B16 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B471A247F880800088B16 /* DemoTests.swift */; };
 		185B4726247F880800088B16 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B4725247F880800088B16 /* DemoUITests.swift */; };
-		185B474E247F96BE00088B16 /* YSDymicLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 185B4742247F8DCD00088B16 /* YSDymicLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F8DBA67556F5633FA09FEF1 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E47B9D96C8BCA22EB3218B /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +40,10 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		185B474F247F96BE00088B16 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				185B474E247F96BE00088B16 /* YSDymicLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180395C42480F047003FFE57 /* YSDymicLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YSDymicLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180C16D12480E29300986A37 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		180C16D22480E29300986A37 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		185B4700247F880600088B16 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B4703247F880600088B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185B4705247F880600088B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,9 @@
 		185B4727247F880800088B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185B4742247F8DCD00088B16 /* YSDymicLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YSDymicLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B4744247F8DD200088B16 /* libYSStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libYSStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AA0F5F198388EA9CF8ACA6 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		C6E47B9D96C8BCA22EB3218B /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60725A3D948042608ED4B07 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1806E2A9247FD18D002DC535 /* YSDymicLibrary.framework in Frameworks */,
+				180395C52480F047003FFE57 /* YSDymicLibrary.framework in Frameworks */,
 				1806E2AA247FD18D002DC535 /* libYSStaticLibrary.a in Frameworks */,
+				2F8DBA67556F5633FA09FEF1 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1563F56A606B22DEDC97F344 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62AA0F5F198388EA9CF8ACA6 /* Pods-Demo.debug.xcconfig */,
+				F60725A3D948042608ED4B07 /* Pods-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		185B46F7247F880600088B16 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,7 @@
 				185B4724247F880800088B16 /* DemoUITests */,
 				185B4701247F880600088B16 /* Products */,
 				185B4741247F8DCD00088B16 /* Frameworks */,
+				1563F56A606B22DEDC97F344 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,8 +169,12 @@
 		185B4741247F8DCD00088B16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180395C42480F047003FFE57 /* YSDymicLibrary.framework */,
+				180C16D22480E29300986A37 /* Alamofire.framework */,
+				180C16D12480E29300986A37 /* SnapKit.framework */,
 				185B4744247F8DD200088B16 /* libYSStaticLibrary.a */,
 				185B4742247F8DCD00088B16 /* YSDymicLibrary.framework */,
+				C6E47B9D96C8BCA22EB3218B /* Pods_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,10 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185B472A247F880800088B16 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				4807436A977DAC7DC24B99FB /* [CP] Check Pods Manifest.lock */,
 				185B46FC247F880600088B16 /* Sources */,
 				185B46FD247F880600088B16 /* Frameworks */,
 				185B46FE247F880600088B16 /* Resources */,
 				185B474F247F96BE00088B16 /* Embed Frameworks */,
+				343C7AA2DEC98C930070D3D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +308,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		343C7AA2DEC98C930070D3D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4807436A977DAC7DC24B99FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		185B46FC247F880600088B16 /* Sources */ = {
@@ -465,17 +529,20 @@
 		};
 		185B472B247F880800088B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AA0F5F198388EA9CF8ACA6 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZMDZ97XAH;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -488,17 +555,20 @@
 		};
 		185B472C247F880800088B16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60725A3D948042608ED4B07 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZMDZ97XAH;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

@@ -1,0 +1,13 @@
+module Alamofire [system] {
+    header "Alamofire.framework/Alamofire-Swift.h"
+    header "Alamofire.framework/Alamofire.h"
+    export *
+}
+
+module SnapKitBBA [system] {
+    header "SnapKit.framework/Headers/SnapKit-Swift.h"
+    header "SnapKit.framework/Headers/SnapKit.h"
+    header "PublicHeader.h"
+    export *
+}
+

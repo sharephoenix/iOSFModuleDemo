@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806E2D72480BD5B002DC535 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806E2D62480BD5B002DC535 /* TestController.swift */; };
 		185B46E7247F877400088B16 /* YSDymicLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B46DD247F877300088B16 /* YSDymicLibrary.framework */; };
 		185B46EC247F877400088B16 /* YSDymicLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B46EB247F877400088B16 /* YSDymicLibraryTests.swift */; };
 		185B46EE247F877400088B16 /* YSDymicLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 185B46E0247F877300088B16 /* YSDymicLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +25,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18F450EB2480D8D800A6553B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1806E2D62480BD5B002DC535 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		185B46DD247F877300088B16 /* YSDymicLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YSDymicLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B46E0247F877300088B16 /* YSDymicLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSDymicLibrary.h; sourceTree = "<group>"; };
 		185B46E1247F877300088B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1806E2D52480BD41002DC535 /* TestWork */ = {
+			isa = PBXGroup;
+			children = (
+				1806E2D62480BD5B002DC535 /* TestController.swift */,
+			);
+			path = TestWork;
+			sourceTree = "<group>";
+		};
 		185B46D3247F877300088B16 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +97,7 @@
 		185B46DF247F877300088B16 /* YSDymicLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				1806E2D52480BD41002DC535 /* TestWork */,
 				185B46E0247F877300088B16 /* YSDymicLibrary.h */,
 				185B46E1247F877300088B16 /* Info.plist */,
 				185B4735247F89B900088B16 /* DynamicTest.swift */,
@@ -113,6 +137,7 @@
 				185B46D9247F877300088B16 /* Sources */,
 				185B46DA247F877300088B16 /* Frameworks */,
 				185B46DB247F877300088B16 /* Resources */,
+				18F450EB2480D8D800A6553B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185B4736247F89B900088B16 /* DynamicTest.swift in Sources */,
+				1806E2D72480BD5B002DC535 /* TestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +373,6 @@
 		185B46F2247F877400088B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,7 +381,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YSDymicLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +400,6 @@
 		185B46F3247F877400088B16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -384,7 +408,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YSDymicLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
